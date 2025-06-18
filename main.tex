@@ -1,0 +1,301 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Rajesh Doddegowda} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.4pt} \href{tel:917975454267}{+91 797 545 4267}
+    $|$
+    \faAt \hspace{.4pt} \href{mailto:rajeshdoddegowda@gmail.com}{rajeshdoddegowda@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.4pt} \href{https://www.linkedin.com/in/rajesh-doddegowda}{LinkedIn}
+    $|$
+    \faGithub \hspace{.4pt} \href{https://github.com/RajeshDgowda}{GitHub}
+    $|$
+    \faGlobe \hspace{.4pt} \href{https://rajeshdgowda.github.io/rajeshdoddegowda.github.io/}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.4pt} \href{}{Tumkur, Karnataka, India}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Universität Paderborn
+      }{Paderborn, Germany}
+      {M.Sc. in Electrical Systems Engineering}{}
+      {Specialization in Signals and Information Processing;
+      \textbf{GPA: 2.8/4.00 (1.0 Highest)}}{Oct 2019 \textbf{--} Nov 2024}
+      
+       \resumeSubheading
+      {Sri Siddhartha Institute of Technology (SSIT)
+      }{Tumkur, Karnataka, India}
+      {B.E. in Electronics and Communication Engineering;
+      \textbf{GPA: 9.11/10.0 (10.0 Highest)}}{Sep 2015 \textbf{--} Jul 2019}
+    
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ C/C++, Python, Java, HTML, CSS, SQL, MATLAB/Simulink, JavaScript, TypeScript} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Qt, MySQL, MongoDB, Git (with Jenkins integration for automated builds and testing), SVN, Docker, Node.js, React.js, PyTorch, TensorFlow, keras, scikit-learn, NumPy, Pandas, matplotlib} \\ \vspace{3pt}
+        
+        \textbf{Methodologies:}{ Agile, Scrum, OOP, ROS, Functional Programming, DevOps, CI/CD, TDD, Machine Learning, Reinforcement Learning} \\ \vspace{3pt}
+         
+          \textbf{Languages:}{ English (Fluent), Kannnada (Native), Hindi (Fluent), German (Elementory)} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+       {Loxone Germany GmbH}{Wäschenbeuren, Germany}
+      {Software Developer}{Jul 2024 \textbf{--} Apr 2025, Full-time}
+        \resumeItemListStart
+            \resumeItem{Developed the logic blocks and visualization in the Loxone Config in C++/Qt}
+            \resumeItem{Developed the application programs for the miniserver (Linux platform) in C++}
+            \resumeItem{Developed the interfaces to the peripheral devices with the embedded team}
+            \resumeItem{Conceptual design of the API for visualization with the app team and Use of existing hardware interfaces/libraries for communication with the peripheral devices}
+             \resumeItem{Ensure the functionality via automated test sequences}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Flowsta}{Ingolstadt, Germany}
+      {Software Engineer}{Apr 2024 \textbf{--} Jun 2024, Full-time, Contract}
+        \resumeItemListStart
+            \resumeItem{Played a key role in the development of Flowsta Page Builder, a drag-and-drop desktop application for effortless web page creation, enhancing user experience and functionality \href{https://www.flowsta.com}{\color{blue}(web link)}}
+            \resumeItem{Implemented responsive rendering features to ensure seamless display and usability across multiple devices and screen sizes}
+            \resumeItem{Developed an interactive user interface for Flowsta using Qt and QML, translating Figma designs into a polished, user-friendly application \href{https://www.figma.com/design/250mkmRIFDDwW6ksOnDGld/Flowsta-design?node-id=0-1&p=f}{\color{blue}(Figma desgins link)}}
+             \resumeItem{Enhanced the existing design by adding new features that improved user interaction and customization options, contributing to a more robust product offering}
+              \resumeItem{Conducted automated testing to ensure consistent and reliable functionality, reducing bugs and improving user satisfaction}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Universität Paderborn}{Paderborn, Germany}
+      {Student Research Assistant}{Jan 2022 \textbf{--} Mar 2024, Part-time}
+        \resumeItemListStart
+         \resumeItem{Developed the UI for synchronous swarm robots using Qt}
+            \resumeItem{Implement the motion control algorithm for synchronous swarm, resulting in a 20\% increase in operator efficiency}
+            \resumeItem{The integration of localization and control systems through effective programming, enhancing 15\% efficiency and reliability under supervision of \href{https://www.uni-paderborn.de/person/47213}{\color{blue} Mr. Jonas Harbig} and \href{https://www.uni-paderborn.de/en/person/146}{\color{blue} Dr. Matthias Fischer}}
+            \resumeItem{Conducted comprehensive module integration, Unit test, significantly reducing bugs and ensuring software reliability}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Universität Paderborn}{Paderborn, Germany}
+      {Optimal Drone Strategies For Packet Delivery}{Sep 2023 \textbf{--} Mar 2024, Master Thesis}
+        \resumeItemListStart
+            \resumeItem{Implemented path planning strategies for Drone and truck routingproblem and Conducted a comparative analysis of the cost effectiveness and efficiency between heuristic and reinforcement learning under direct guidance of  \href{https://cs.uni-paderborn.de/en/ti/personal/scheideler}{\color{blue} Prof. Dr. Christian Scheideler}}
+            \resumeItem{Developed and optimized heuristic-based solutions in Python to solve the Traveling Salesman Problem (TSP) specifically for autonomous drone route planning}
+            \resumeItem{Designed and implemented an encoder-decoder neural network integrated with Reinforcement Learning (RL) to improve route planning efficiency for hybrid truck-drone delivery systems}
+            \resumeItem{Utilized High Performance Computing (HPC) at PC2 Paderborn University for simultaneous computations, employing the NVIDIA A100 for GPU acceleration}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Rescue robot/ Disaster control robot}}{}
+          \resumeItemListStart
+            \resumeItem{A one-year master's project involving behavior control implementation using the ROSPlan framework in C++, along with developing a QtWidget-based GUI to visualize action execution}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{The Binary Search Tree Explorer} $|$ \emph{\href{https://github.com/RajeshDgowda/Binary-Search-Tree-Qt}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an interactive C++ application utilizing the Qt framework to graphically represent Binary Search Trees (BST). It features node manipulation, tree traversal visualizations, and zoom functionality, with support for saving BSTs as text or image files, aiming to enhance educational demonstrations of BST properties and algorithms}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Color Lines a logical game using Qt} $|$ \emph{\href{https://github.com/RajeshDgowda/Color-Lines-a-logical-game-using-Qt/tree/main}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a clone of the classic Color Lines game using Qt/QML. The project involved creating a 9x9 grid game logic, handling dynamic ball placement, and implementing a scoring system. Built with CMake and dependencies on Qt6, it showcases advanced use of Qt Quick and SQL components}
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+\section{Certificates}
+  \resumeSubHeadingListStart
+    
+     \resumeOrganizationHeading
+       {Qt 6 Core Advanced with C++}{Mar 2024}{Advanced Qt 6  \href{https://www.udemy.com/certificate/UC-6600f633-3b9f-4f2e-9dc9-75d3e2238920}{\color{blue} udemy course} using C++ to create high performance applications on Windows, Mac and Linux}
+       
+      \resumeOrganizationHeading
+       {Qt5 QML Intermediate: Interfacing to C++}{Mar 2024}{\href{https://www.udemy.com/certificate/UC-3dd4a681-7d90-4d22-8707-b775778b501e}{\color{blue} Udemy course}  teaches how to connect a C++ back end with a Qt Quick UI into one seamless application}
+       
+       \resumeOrganizationHeading
+       {Learn SQL Basics for Data Science}{Jun 2022}{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/XFA24R3RU5NL}{\color{blue} Coursera specialization} builds beginner SQL skills for data analysis, A/B testing, Spark, and ML}
+       
+       \resumeOrganizationHeading
+       {IBM AI Engineering}{Jul 2022}{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/VV8JJ9MAFWTT}{\color{blue} Coursera specialization} certificate builds ML/DL skills using Spark, Keras, PyTorch, and TensorFlow}
+       
+       \resumeOrganizationHeading
+       {Python 3 Programming}{Jul 2022}{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/XQJ5MQX4X6ZX}{\color{blue} Coursera specialization} show Python skills in core concepts, debugging, APIs, and reading documentation}
+    
+  \resumeSubHeadingListEnd
+
+
+
+\end{document}

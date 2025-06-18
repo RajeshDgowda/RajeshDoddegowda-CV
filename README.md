@@ -24,7 +24,7 @@ pdflatex main.tex
 
 ## Author
 
-👤 **Aras Güngöre**
+👤 **Rajesh Doddegowda**
 
 * LinkedIn: [@rajeshdoddegowda](https://www.linkedin.com/in/rajesh-doddegowda)
 * GitHub: [@rajeshdoddegowda](https://github.com/RajeshDgowda)
